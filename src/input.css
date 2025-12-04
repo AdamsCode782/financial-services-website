@@ -11,8 +11,9 @@
     @apply dark:text-white rounded;
   }
 
-  img {
-    @apply rounded h-full object-cover;
+  /* FIXED — fully responsive images */
+    img {
+       @apply rounded h-auto;
   }
 }
 

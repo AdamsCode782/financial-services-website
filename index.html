@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -24,30 +24,32 @@
     <link rel="stylesheet" href="./output/output.css" />
     <title>Synova</title>
   </head>
-  <body
-    class="duration-200 2xl:max-w-screen-2xl 2xl:mx-auto dark:bg-primary-900"
-  >
-    <!-- -------------------------- Header -->
+
+  <body class="duration-200 2xl:max-w-screen-2xl 2xl:mx-auto dark:bg-primary-900">
+
+<!-- -------------------------- Header -->
 <header class="component">
   <nav
     class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto"
   >
     <div class="sm:flex-row">
       <a class="py-2 text-2xl font-bold" href="#">Synova</a>
-      <p>Consulting</p>
-      <p>Solutions</p>
+
+      <a href="#consulting" class="cursor-pointer hover:underline">Consulting</a>
+      <a href="#solutions" class="cursor-pointer hover:underline">Solutions</a>
     </div>
 
     <div class="sm:flex-row-reverse sm:justify-end md:flex-row">
-      <a href="#"
-        ><i class="fa-solid fa-location-dot"></i> <span>Our Offices</span></a
-      >
+      <a href="javascript:void(0)">
+        <i class="fa-solid fa-location-dot"></i> <span>Our Offices</span>
+      </a>
       <p class="text-primary-500">1-500-123-4567</p>
       <a
         class="self-center border-2 border-primary-900 px-6 py-2 text-lg dark:border-white"
-        href="#"
-        >Client Login</a
+        href="javascript:void(0)"
       >
+        Client Login
+      </a>
     </div>
   </nav>
 
@@ -66,16 +68,21 @@
     <div class="flex flex-col gap-y-5">
       <h1 class="text-4xl font-bold md:text-6xl">Innovative Tech Consulting</h1>
       <p class="text-lg">Helping businesses grow with modern technology</p>
+
       <a
         class="bg-green px-6 py-2 text-center text-lg text-white shadow-md shadow-green sm:self-start"
-        href="#"
+        href="javascript:void(0)"
       >
         Get Started
       </a>
     </div>
 
-    <figure>
-      <img src="images/showcase.svg" alt="" />
+    <figure class="w-full flex justify-center">
+      <img
+        src="images/showcase-2.png"
+        alt=""
+        class="w-full max-w-md md:max-w-full h-auto object-contain mx-auto"
+      />
     </figure>
 
     <img
@@ -88,229 +95,140 @@
 
 <main>
   <!-- -------------------------- About -->
-  <section class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
-    <div>
-      <h2 class="text-2xl font-bold md:text-center">
-        A Modern Approach to Technology
-      </h2>
-      <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-500">
-        We are a team of experts dedicated to helping companies streamline their
-        operations through smart, scalable tech solutions.
-      </p>
-    </div>
+  <section id="consulting" class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
 
-    <div class="md:flex-row-reverse md:*:basis-2/4">
-      <div class="flex flex-col gap-y-8 md:self-center">
-        <div class="flex flex-col gap-y-3">
-          <h3 class="text-xl font-semibold text-blue">Who We Are</h3>
-          <p class="text-orange">Trusted by startups and enterprises.</p>
-          <p class="dark:text-primary-600">
-            We provide consulting services that simplify digital transformation
-            and help organizations adopt the right technology for long-term
-            growth.
-          </p>
-        </div>
-
-        <div class="flex flex-col gap-y-5 md:gap-y-10">
-          <div
-            class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
-          >
-            <figure
-              class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
-            >
-              <img src="images/tick.png" alt="" />
-            </figure>
-            <h4
-              class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
-            >
-              End-to-End Strategy
-            </h4>
-            <p class="dark:text-primary-600">
-              Clear plans tailored to your business goals.
-            </p>
-          </div>
-
-          <div
-            class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
-          >
-            <figure
-              class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
-            >
-              <img src="images/tick.png" alt="" />
-            </figure>
-            <h4
-              class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
-            >
-              Reliable Support
-            </h4>
-            <p class="dark:text-primary-600">
-              We're here whenever you need expert guidance.
-            </p>
-          </div>
-
-          <div
-            class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
-          >
-            <figure
-              class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
-            >
-              <img src="images/tick.png" alt="" />
-            </figure>
-            <h4
-              class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
-            >
-              Streamlined Processes
-            </h4>
-            <p class="dark:text-primary-600">
-              Reduce complexity and improve performance.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <figure class="relative">
-        <img
-          class="md:[transform:rotateY(0.5turn)]"
-          src="images/about.svg"
-          alt=""
-        />
-        <img
-          class="absolute left-0 top-1/4 -z-10 hidden md:block h-96 w-1/3 dark:hidden"
-          src="images/about-design.png"
-          alt=""
-        />
-      </figure>
-    </div>
-  </section>
-
-  <!-- -------------------------- Features -->
-  <section class="component bg-primary-300 dark:bg-primary-900">
-  <div class="flex flex-col gap-y-5 md:gap-y-3">
-    <h2 class="text-center text-2xl font-bold">
-      Solutions for Every Tech Challenge
+  <div>
+    <h2 class="text-2xl font-bold md:text-center">
+      A Modern Approach to Technology
     </h2>
-    <p class="text-center dark:text-primary-500">
-      Simple, effective, and future-ready.
+    <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-500">
+      We are a team of experts dedicated to helping companies streamline their
+      operations through smart, scalable tech solutions.
     </p>
   </div>
 
-  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    <!-- IT Modernization -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-blue/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-computer text-blue text-4xl"></i>
-      </figure>
+  <!-- FIX APPLIED HERE → lg instead of md -->
+  <div class="lg:flex-row-reverse lg:*:basis-2/4 items-center">
 
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        IT Modernization
-      </h4>
+    <div class="flex flex-col gap-y-8 md:self-center text-center md:text-left">
 
-      <p class="text-center dark:text-primary-600">
-        Upgrade outdated systems with modern technology.
-      </p>
+      <div class="flex flex-col gap-y-3">
+        <h3 class="text-xl font-semibold text-blue">Who We Are</h3>
+        <p class="text-orange">Trusted by startups and enterprises.</p>
+        <p class="dark:text-primary-600">
+          We provide consulting services that simplify digital transformation
+          and help organizations adopt the right technology for long-term growth.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-y-5 md:gap-y-10 items-center md:items-start">
+
+        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+          </figure>
+          <h4 class="text-lg font-semibold text-orange">End-to-End Strategy</h4>
+          <p class="dark:text-primary-600">Clear plans tailored to your business goals.</p>
+        </div>
+
+        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+          </figure>
+          <h4 class="text-lg font-semibold text-orange">Reliable Support</h4>
+          <p class="dark:text-primary-600">We're here whenever you need expert guidance.</p>
+        </div>
+
+        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+          </figure>
+          <h4 class="text-lg font-semibold text-orange">Streamlined Processes</h4>
+          <p class="dark:text-primary-600">Reduce complexity and improve performance.</p>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Cloud Integration -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-orange/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-cloud-arrow-up text-orange text-4xl"></i>
-      </figure>
+    <!-- WOMAN HIDDEN BELOW DESKTOP -->
+    <figure class="hidden lg:block relative mx-auto">
+      <img src="images/about.svg" alt="" class="max-w-xs md:max-w-full mx-auto" />
+      <img
+        class="absolute left-0 top-1/4 -z-10 h-96 w-1/3 dark:hidden"
+        src="images/about-design.png"
+        alt=""
+      />
+    </figure>
 
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        Cloud Integration
-      </h4>
-
-      <p class="text-center dark:text-primary-600">
-        Smooth transitions to cloud-based infrastructure.
-      </p>
-    </div>
-
-    <!-- Workflow Automation -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-green/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-gears text-green text-4xl"></i>
-      </figure>
-
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        Workflow Automation
-      </h4>
-
-      <p class="text-center dark:text-primary-600">
-        Save time by automating routine business processes.
-      </p>
-    </div>
-
-    <!-- Business Intelligence -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-blue/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-chart-line text-blue text-4xl"></i>
-      </figure>
-
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        Business Intelligence
-      </h4>
-
-      <p class="text-center dark:text-primary-600">
-        Turn your data into actionable insights.
-      </p>
-    </div>
-
-    <!-- Cybersecurity -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-orange/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-shield-halved text-orange text-4xl"></i>
-      </figure>
-
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        Cybersecurity
-      </h4>
-
-      <p class="text-center dark:text-primary-600">
-        Protect your systems with strong security practices.
-      </p>
-    </div>
-
-    <!-- Custom Solutions -->
-    <div
-      class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
-    >
-      <figure
-        class="size-28 rounded-full bg-green/10 p-4 flex items-center justify-center dark:bg-transparent"
-      >
-        <i class="fa-solid fa-puzzle-piece text-green text-4xl"></i>
-      </figure>
-
-      <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
-        Custom Solutions
-      </h4>
-
-      <p class="text-center dark:text-primary-600">
-        Tailored tech services built specifically for you.
-      </p>
-    </div>
   </div>
 </section>
 
+
+  <!-- -------------------------- Features -->
+  <section id="solutions" class="component bg-primary-300 dark:bg-primary-900">
+    <div class="flex flex-col gap-y-5 md:gap-y-3">
+      <h2 class="text-center text-2xl font-bold">Solutions for Every Tech Challenge</h2>
+      <p class="text-center dark:text-primary-500">
+        Simple, effective, and future-ready.
+      </p>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- IT Modernization -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-blue/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-computer text-blue text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">IT Modernization</h4>
+        <p class="text-center dark:text-primary-600">Upgrade outdated systems with modern technology.</p>
+      </div>
+
+      <!-- Cloud Integration -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-orange/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-cloud-arrow-up text-orange text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">Cloud Integration</h4>
+        <p class="text-center dark:text-primary-600">Smooth transitions to cloud-based infrastructure.</p>
+      </div>
+
+      <!-- Workflow Automation -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-green/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-gears text-green text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">Workflow Automation</h4>
+        <p class="text-center dark:text-primary-600">Save time by automating routine business processes.</p>
+      </div>
+
+      <!-- Business Intelligence -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-blue/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-chart-line text-blue text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">Business Intelligence</h4>
+        <p class="text-center dark:text-primary-600">Turn your data into actionable insights.</p>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-orange/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-shield-halved text-orange text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">Cybersecurity</h4>
+        <p class="text-center dark:text-primary-600">Protect your systems with strong security practices.</p>
+      </div>
+
+      <!-- Custom Solutions -->
+      <div class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+        <figure class="size-28 rounded-full bg-green/10 p-4 flex items-center justify-center dark:bg-transparent">
+          <i class="fa-solid fa-puzzle-piece text-green text-4xl"></i>
+        </figure>
+        <h4 class="text-lg font-semibold text-primary-900 dark:text-white">Custom Solutions</h4>
+        <p class="text-center dark:text-primary-600">Tailored tech services built specifically for you.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- -------------------------- Process -->
   <section class="component">
@@ -390,10 +308,11 @@
   </section>
 
   <!-- -------------------------- Testimonial -->
+  <!-- FIX APPLIED HERE → lg instead of md -->
   <section
-    class="component bg-primary-300 dark:bg-primary-900 md:flex-row md:gap-x-12 md:*:basis-2/4"
+    class="component bg-primary-300 dark:bg-primary-900 lg:flex-row lg:gap-x-12 lg:*:basis-2/4"
   >
-    <div class="flex flex-col gap-5 md:self-center">
+    <div class="flex flex-col gap-5 lg:self-center">
       <figure>
         <img src="images/quote.png" alt="" />
       </figure>
@@ -436,7 +355,9 @@
         </p>
       </div>
 
-      <a class="border-2 border-green px-6 py-2" href="#"> Get Started </a>
+      <a class="border-2 border-green px-6 py-2" href="javascript:void(0)">
+        Get Started
+      </a>
     </div>
   </section>
 
@@ -462,32 +383,32 @@
           <li>
             <span
               class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span
-            >Email Support
+            ></span>
+            Email Support
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span
-            >Monthly Check-ins
+            ></span>
+            Monthly Check-ins
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span
-            >Basic System Review
+            ></span>
+            Basic System Review
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span
-            >Starter Tools Setup
+            ></span>
+            Starter Tools Setup
           </li>
         </ul>
 
-        <a class="border-2 border-green px-4 py-2 text-center" href="#"
-          >Choose Plan</a
-        >
+        <a class="border-2 border-green px-4 py-2 text-center" href="javascript:void(0)">
+          Choose Plan
+        </a>
       </div>
 
       <div
@@ -505,32 +426,32 @@
           <li>
             <span
               class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span
-            >Priority Support
+            ></span>
+            Priority Support
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span
-            >Advanced System Review
+            ></span>
+            Advanced System Review
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span
-            >Process Optimization
+            ></span>
+            Process Optimization
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span
-            >Cloud Recommendations
+            ></span>
+            Cloud Recommendations
           </li>
         </ul>
 
-        <a class="border-2 border-orange px-4 py-2 text-center" href="#"
-          >Choose Plan</a
-        >
+        <a class="border-2 border-orange px-4 py-2 text-center" href="javascript:void(0)">
+          Choose Plan
+        </a>
       </div>
 
       <div
@@ -547,34 +468,32 @@
           <li>
             <span
               class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span
-            >Full IT Strategy
+            ></span>
+            Full IT Strategy
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span
-            >Hands-On Implementation
+            ></span>
+            Hands-On Implementation
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span
-            >Team Training
+            ></span>
+            Team Training
           </li>
           <li>
             <span
               class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span
-            >Custom Solutions
+            ></span>
+            Custom Solutions
           </li>
         </ul>
 
-        <a
-          class="border-2 border-blue px-4 py-2 text-center sm:self-center"
-          href="#"
-          >Choose Plan</a
-        >
+        <a class="border-2 border-blue px-4 py-2 text-center sm:self-center" href="javascript:void(0)">
+          Choose Plan
+        </a>
       </div>
     </div>
   </section>
@@ -642,7 +561,9 @@
         </p>
       </div>
 
-      <a class="border-2 border-orange px-6 py-2" href="#"> Get Started </a>
+      <a class="border-2 border-orange px-6 py-2" href="javascript:void(0)">
+        Get Started
+      </a>
     </div>
   </section>
 </main>

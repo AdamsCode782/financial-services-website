@@ -6,15 +6,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          900: "#212529",
-          600: "#818697",
-          500: "#9b9b9b",
-          400: "#bbbdc6",
-          300: "#f0f2f6",
+          900: "#1a1b26", // deep slate
+          600: "#565f89", // steel gray
+          500: "#a9b1d6", // pale lavender-gray
+          400: "#c0caf5", // soft periwinkle
+          300: "#f2f5ff", // almost white w/ blue tint
         },
-        green: "#1ab98f",
-        blue: "#2b7fff",
-        orange: "#ea9b79",
+        green: "#2de3b3",   // neon mint
+        blue: "#6d5dfc",    // violet-blue
+        orange: "#ff6b6b",  // modern coral red
       },
       fontFamily: {
         sans: ["Ubuntu", "sans-serif"],

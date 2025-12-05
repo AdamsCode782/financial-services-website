@@ -30,7 +30,9 @@
 <!-- -------------------------- Header -->
 <header class="component">
   <nav
-    class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto"
+    class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center
+           sm:justify-between sm:*:items-center sm:*:gap-x-5
+           md:flex-row md:w-5/6 2xl:w-auto"
   >
     <div class="sm:flex-row">
       <a class="py-2 text-2xl font-bold" href="#">Synova</a>
@@ -44,12 +46,6 @@
         <i class="fa-solid fa-location-dot"></i> <span>Our Offices</span>
       </a>
       <p class="text-primary-500">1-500-123-4567</p>
-      <a
-        class="self-center border-2 border-primary-900 px-6 py-2 text-lg dark:border-white"
-        href="javascript:void(0)"
-      >
-        Client Login
-      </a>
     </div>
   </nav>
 
@@ -58,7 +54,9 @@
     class="absolute right-6 top-12 sm:right-8 sm:top-24 lg:right-12 2xl:top-32 2xl:left-2/4"
   >
     <input
-      class="cursor-pointer relative appearance-none h-6 w-14 rounded-full bg-primary-400 duration-500 before:absolute before:h-6 before:w-6 before:bg-primary-900 before:rounded-full before:scale-110 checked:before:translate-x-8 before:duration-300 checked:before:bg-slate-300 checked:bg-slate-900"
+      class="cursor-pointer relative appearance-none h-6 w-14 rounded-full bg-primary-400 duration-500
+             before:absolute before:h-6 before:w-6 before:bg-primary-900 before:rounded-full before:scale-110
+             checked:before:translate-x-8 before:duration-300 checked:before:bg-slate-300 checked:bg-slate-900"
       type="checkbox"
     />
   </div>
@@ -81,7 +79,7 @@
       <img
         src="images/showcase-2.png"
         alt=""
-        class="w-full max-w-md md:max-w-full h-auto object-contain mx-auto"
+        class="w-full max-w-md md:max-w-full mx-auto"
       />
     </figure>
 
@@ -92,79 +90,77 @@
     />
   </section>
 </header>
-
 <main>
   <!-- -------------------------- About -->
   <section id="consulting" class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
 
-  <div>
-    <h2 class="text-2xl font-bold md:text-center">
-      A Modern Approach to Technology
-    </h2>
-    <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-500">
-      We are a team of experts dedicated to helping companies streamline their
-      operations through smart, scalable tech solutions.
-    </p>
-  </div>
-
-  <!-- FIX APPLIED HERE → lg instead of md -->
-  <div class="lg:flex-row-reverse lg:*:basis-2/4 items-center">
-
-    <div class="flex flex-col gap-y-8 md:self-center text-center md:text-left">
-
-      <div class="flex flex-col gap-y-3">
-        <h3 class="text-xl font-semibold text-blue">Who We Are</h3>
-        <p class="text-orange">Trusted by startups and enterprises.</p>
-        <p class="dark:text-primary-600">
-          We provide consulting services that simplify digital transformation
-          and help organizations adopt the right technology for long-term growth.
-        </p>
-      </div>
-
-      <div class="flex flex-col gap-y-5 md:gap-y-10 items-center md:items-start">
-
-        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
-          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
-            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
-          </figure>
-          <h4 class="text-lg font-semibold text-orange">End-to-End Strategy</h4>
-          <p class="dark:text-primary-600">Clear plans tailored to your business goals.</p>
-        </div>
-
-        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
-          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
-            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
-          </figure>
-          <h4 class="text-lg font-semibold text-orange">Reliable Support</h4>
-          <p class="dark:text-primary-600">We're here whenever you need expert guidance.</p>
-        </div>
-
-        <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
-          <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
-            <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
-          </figure>
-          <h4 class="text-lg font-semibold text-orange">Streamlined Processes</h4>
-          <p class="dark:text-primary-600">Reduce complexity and improve performance.</p>
-        </div>
-
-      </div>
+    <div>
+      <h2 class="text-2xl font-bold md:text-center">
+        A Modern Approach to Technology
+      </h2>
+      <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-500">
+        We are a team of experts dedicated to helping companies streamline their
+        operations through smart, scalable tech solutions.
+      </p>
     </div>
 
-    <!-- WOMAN HIDDEN BELOW DESKTOP -->
-    <figure class="hidden lg:block relative mx-auto">
-      <img src="images/about.svg" alt="" class="max-w-xs md:max-w-full mx-auto" />
-      <img
-        class="absolute left-0 top-1/4 -z-10 h-96 w-1/3 dark:hidden"
-        src="images/about-design.png"
-        alt=""
-      />
-    </figure>
+    <!-- layout switches only at lg -->
+    <div class="lg:flex-row-reverse lg:*:basis-auto items-center">
 
-  </div>
-</section>
+      <div class="flex flex-col gap-y-8 md:self-center text-center md:text-left">
 
+        <div class="flex flex-col gap-y-3">
+          <h3 class="text-xl font-semibold text-blue">Who We Are</h3>
+          <p class="text-orange">Trusted by startups and enterprises.</p>
+          <p class="dark:text-primary-600">
+            We provide consulting services that simplify digital transformation
+            and help organizations adopt the right technology for long-term growth.
+          </p>
+        </div>
 
-  <!-- -------------------------- Features -->
+        <div class="flex flex-col gap-y-5 md:gap-y-10 items-center md:items-start">
+
+          <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+            <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+              <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+            </figure>
+            <h4 class="text-lg font-semibold text-orange">End-to-End Strategy</h4>
+            <p class="dark:text-primary-600">Clear plans tailored to your business goals.</p>
+          </div>
+
+          <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+            <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+              <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+            </figure>
+            <h4 class="text-lg font-semibold text-orange">Reliable Support</h4>
+            <p class="dark:text-primary-600">We're here whenever you need expert guidance.</p>
+          </div>
+
+          <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4 items-center">
+            <figure class="md:col-start-1 md:row-span-2 mx-auto md:mx-0">
+              <img src="images/tick.png" alt="" class="w-16 h-16 object-contain" />
+            </figure>
+            <h4 class="text-lg font-semibold text-orange">Streamlined Processes</h4>
+            <p class="dark:text-primary-600">Reduce complexity and improve performance.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- WOMAN IMAGE -->
+      <figure class="hidden lg:block relative mx-auto max-w-md">
+        <img src="images/about.svg" alt="" class="w-full" />
+        <img
+          class="absolute left-0 top-1/4 -z-10 h-96 w-1/3 dark:hidden object-contain"
+          src="images/about-design.png"
+          alt=""
+        />
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- -------------------------- Solutions -->
   <section id="solutions" class="component bg-primary-300 dark:bg-primary-900">
     <div class="flex flex-col gap-y-5 md:gap-y-3">
       <h2 class="text-center text-2xl font-bold">Solutions for Every Tech Challenge</h2>
@@ -306,205 +302,193 @@
       </div>
     </div>
   </section>
-
   <!-- -------------------------- Testimonial -->
-  <!-- FIX APPLIED HERE → lg instead of md -->
   <section
-    class="component bg-primary-300 dark:bg-primary-900 lg:flex-row lg:gap-x-12 lg:*:basis-2/4"
+    class="component bg-primary-300 dark:bg-primary-900 lg:flex-row lg:items-center lg:gap-x-12"
   >
-    <div class="flex flex-col gap-5 lg:self-center">
-      <figure>
-        <img src="images/quote.png" alt="" />
+    <!-- TEXT SIDE -->
+    <div class="flex flex-col gap-5 lg:flex-1 lg:max-w-xl">
+      <figure class="w-16">
+        <img src="images/quote.png" alt="quote" class="w-full h-auto" />
       </figure>
 
-      <p class="font-semibold xl:text-xl">
+      <p class="font-semibold xl:text-xl leading-relaxed">
         Working with Synova completely transformed our workflow. Their team
         helped us adopt new tools that made us faster and more efficient.
       </p>
 
       <div>
-        <h5 class="text-blue font-bold">Jane Doe</h5>
+        <h5 class="text-blue font-bold">Jennifer Connelly</h5>
         <p>CTO, Bright Systems</p>
       </div>
     </div>
 
-    <figure>
-      <img src="images/testimonial.png" alt="" />
+    <!-- IMAGE SIDE -->
+    <figure class="mt-6 lg:mt-0 flex justify-center lg:flex-1">
+      <img 
+        src="images/testimonials.png" 
+        alt="testimonial portrait" 
+        class="w-full max-w-md h-auto object-cover rounded"
+      />
     </figure>
   </section>
+  <!-- -------------------------- CTA (Green) -->
+  <section class="bg-green px-4 py-8 sm:px-8 sm:py-20 lg:px-12 lg:mx-8 2xl:mx-16 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900">
 
-  <!-- -------------------------- CTA -->
-  <section
-    class="bg-green px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900"
-  >
+
     <div
-      class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-green md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+      class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-green
+             md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
     >
       <figure
         class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4"
       >
-        <img src="images/shield-green.svg" alt="" />
+        <img src="images/shield-green.svg" alt="" class="w-full h-auto" />
       </figure>
 
-      <div class="space-y-2">
-        <h2 class="text-2xl font-bold text-center">
-          Future-Proof Your Business
-        </h2>
-        <p class="text-center dark:text-primary-500">
+      <div class="space-y-2 text-center md:text-left">
+        <h2 class="text-2xl font-bold">Future-Proof Your Business</h2>
+        <p class="dark:text-primary-500">
           Smarter technology starts with the right partner.
         </p>
       </div>
 
-      <a class="border-2 border-green px-6 py-2" href="javascript:void(0)">
+      <a class="border-2 border-green px-6 py-2" href="#">
         Get Started
       </a>
     </div>
   </section>
 
+
   <!-- -------------------------- Pricing -->
   <section class="component bg-primary-300 dark:bg-primary-900">
-    <div class="flex flex-col gap-y-4 md:gap-y-3">
-      <h2 class="text-center text-2xl font-bold">Pricing</h2>
-      <p class="text-center dark:text-primary-500">Clear, simple plans</p>
+  <div class="flex flex-col gap-y-4 md:gap-y-3">
+    <h2 class="text-center text-2xl font-bold">Pricing</h2>
+    <p class="text-center dark:text-primary-500">Clear, simple plans</p>
+  </div>
+
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- BASIC PLAN -->
+    <div
+      class="flex flex-col gap-y-8 rounded p-8 bg-white dark:border-2 dark:border-green dark:bg-primary-900 dark:shadow-md dark:shadow-green"
+    >
+      <h6 class="text-green self-center uppercase">Basic</h6>
+
+      <h5
+        class="bg-green/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 
+               text-2xl font-bold text-primary-600 dark:text-white"
+      >
+        <sup class="text-green">$</sup>9.99
+      </h5>
+
+      <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+        <li><span class="fas fa-check rounded-full bg-green/40 text-green p-2"></span>Email Support</li>
+        <li><span class="fas fa-check rounded-full bg-green/40 text-green p-2"></span>Monthly Check-ins</li>
+        <li><span class="fas fa-check rounded-full bg-green/40 text-green p-2"></span>Basic System Review</li>
+        <li><span class="fas fa-check rounded-full bg-green/40 text-green p-2"></span>Starter Tools Setup</li>
+      </ul>
+
+      <a class="border-2 border-green px-4 py-2 text-center pricing-btn" href="#">
+        Choose Plan
+      </a>
     </div>
 
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <div
-        class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-green dark:bg-primary-900 dark:shadow-md dark:shadow-green"
+    <!-- PROFESSIONAL PLAN -->
+    <div
+      class="flex flex-col gap-y-8 rounded p-8 bg-white dark:border-2 dark:border-orange dark:bg-primary-900 
+             dark:shadow-md dark:shadow-orange lg:scale-[1.05]"
+    >
+      <h6 class="text-orange self-center uppercase">Professional</h6>
+
+      <h5
+        class="bg-orange/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1
+               text-2xl font-bold text-primary-600 dark:text-white"
       >
-        <h6 class="text-green self-center uppercase">Basic</h6>
-        <h5
-          class="bg-green/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
-        >
-          <sup class="text-green">$</sup>9.99
-        </h5>
+        <sup class="text-orange">$</sup>12.99
+      </h5>
 
-        <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span>
-            Email Support
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span>
-            Monthly Check-ins
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span>
-            Basic System Review
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-green/40 text-green p-2"
-            ></span>
-            Starter Tools Setup
-          </li>
-        </ul>
+      <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+        <li><span class="fas fa-check rounded-full bg-orange/40 text-orange p-2"></span>Priority Support</li>
+        <li><span class="fas fa-check rounded-full bg-orange/40 text-orange p-2"></span>Advanced System Review</li>
+        <li><span class="fas fa-check rounded-full bg-orange/40 text-orange p-2"></span>Process Optimization</li>
+        <li><span class="fas fa-check rounded-full bg-orange/40 text-orange p-2"></span>Cloud Recommendations</li>
+      </ul>
 
-        <a class="border-2 border-green px-4 py-2 text-center" href="javascript:void(0)">
-          Choose Plan
-        </a>
+      <a class="border-2 border-orange px-4 py-2 text-center pricing-btn" href="#">
+        Choose Plan
+      </a>
+    </div>
+
+    <!-- PREMIUM PLAN (FIXED) -->
+    <div
+  class="flex flex-col gap-y-8 rounded p-8 bg-white 
+         dark:border-2 dark:border-blue dark:bg-primary-900 
+         dark:shadow-md dark:shadow-blue
+         sm:col-span-2
+         md:flex-row md:justify-between md:items-center
+         lg:flex-col lg:col-span-1">
+
+
+
+      <h6 class="text-blue self-center uppercase">Premium</h6>
+
+      <h5
+        class="bg-blue/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1
+               text-2xl font-bold text-primary-600 dark:text-white"
+      >
+        <sup class="text-blue">$</sup>19.99
+      </h5>
+
+      <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+        <li><span class="fas fa-check rounded-full bg-blue/40 text-blue p-2"></span>Full IT Strategy</li>
+        <li><span class="fas fa-check rounded-full bg-blue/40 text-blue p-2"></span>Hands-On Implementation</li>
+        <li><span class="fas fa-check rounded-full bg-blue/40 text-blue p-2"></span>Team Training</li>
+        <li><span class="fas fa-check rounded-full bg-blue/40 text-blue p-2"></span>Custom Solutions</li>
+      </ul>
+
+      <a class="border-2 border-blue px-4 py-2 text-center pricing-btn md:self-center lg:w-full" href="#">
+        Choose Plan
+      </a>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- -------------------------- CTA (Orange) -->
+  <section class="bg-orange px-4 py-8 sm:px-8 sm:py-20 lg:px-12 lg:mx-8 2xl:mx-16 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900">
+
+    <div
+      class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-orange
+             md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+    >
+      <figure class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4">
+        <img src="images/shield-yellow.svg" alt="" class="w-full h-auto" />
+      </figure>
+
+      <div class="space-y-2 text-center md:text-left">
+        <h2 class="text-2xl font-bold">Tech Consulting Made Easy</h2>
+        <p class="dark:text-primary-500">
+          Helping teams adopt modern, effective tools.
+        </p>
       </div>
 
-      <div
-        class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-orange dark:bg-primary-900 dark:shadow-md dark:shadow-orange lg:scale-110"
-      >
-        <h6 class="text-orange self-center uppercase">Professional</h6>
-
-        <h5
-          class="bg-orange/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
-        >
-          <sup class="text-orange">$</sup>12.99
-        </h5>
-
-        <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span>
-            Priority Support
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span>
-            Advanced System Review
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span>
-            Process Optimization
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
-            ></span>
-            Cloud Recommendations
-          </li>
-        </ul>
-
-        <a class="border-2 border-orange px-4 py-2 text-center" href="javascript:void(0)">
-          Choose Plan
-        </a>
-      </div>
-
-      <div
-        class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-blue dark:bg-primary-900 dark:shadow-md dark:shadow-blue sm:flex-row sm:col-span-2 sm:justify-between lg:flex-col lg:col-span-1"
-      >
-        <h6 class="text-blue self-center uppercase">Premium</h6>
-        <h5
-          class="bg-blue/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
-        >
-          <sup class="text-blue">$</sup>19.99
-        </h5>
-
-        <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span>
-            Full IT Strategy
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span>
-            Hands-On Implementation
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span>
-            Team Training
-          </li>
-          <li>
-            <span
-              class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
-            ></span>
-            Custom Solutions
-          </li>
-        </ul>
-
-        <a class="border-2 border-blue px-4 py-2 text-center sm:self-center" href="javascript:void(0)">
-          Choose Plan
-        </a>
-      </div>
+      <a class="border-2 border-orange px-6 py-2" href="#">
+        Get Started
+      </a>
     </div>
   </section>
-
   <!-- -------------------------- Q&A -->
-  <section
-    class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue"
-  >
+  <section class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 lg:mx-8 2xl:mx-16 
+         2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue">
     <div class="grid gap-8 md:grid-cols-2">
       <div
-        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
+        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded 
+               dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
       >
         <h6 class="text-center uppercase text-green">How do I start?</h6>
         <p class="text-center dark:text-primary-500">
@@ -513,7 +497,8 @@
       </div>
 
       <div
-        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-orange dark:shadow-md dark:shadow-orange"
+        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded 
+               dark:bg-primary-900 dark:border-2 dark:border-orange dark:shadow-md dark:shadow-orange"
       >
         <h6 class="text-center uppercase text-orange">Is my data safe?</h6>
         <p class="text-center dark:text-primary-500">
@@ -522,7 +507,8 @@
       </div>
 
       <div
-        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-blue dark:shadow-md dark:shadow-blue"
+        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded 
+               dark:bg-primary-900 dark:border-2 dark:border-blue dark:shadow-md dark:shadow-blue"
       >
         <h6 class="text-center uppercase text-blue">Can I cancel anytime?</h6>
         <p class="text-center dark:text-primary-500">
@@ -531,7 +517,8 @@
       </div>
 
       <div
-        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
+        class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded 
+               dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
       >
         <h6 class="text-center uppercase text-green">Do you offer support?</h6>
         <p class="text-center dark:text-primary-500">
@@ -541,37 +528,42 @@
     </div>
   </section>
 
-  <!-- -------------------------- CTA -->
-  <section
-    class="bg-orange px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900"
-  >
+
+  <!-- -------------------------- CTA (Final) -->
+  <section class="bg-orange px-4 py-8 sm:px-8 sm:py-20 lg:px-12 lg:mx-8 2xl:mx-16 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900">
+
     <div
-      class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-orange md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+      class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 
+             shadow-md shadow-orange md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 
+             dark:bg-primary-900"
     >
-      <figure
-        class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4"
-      >
-        <img src="images/shield-yellow.svg" alt="" />
+      <figure class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4">
+        <img src="images/shield-yellow.svg" alt="" class="w-full h-auto" />
       </figure>
 
-      <div class="space-y-2">
-        <h2 class="text-2xl font-bold text-center">Tech Consulting Made Easy</h2>
-        <p class="text-center dark:text-primary-500">
+      <div class="space-y-2 text-center md:text-left">
+        <h2 class="text-2xl font-bold">Tech Consulting Made Easy</h2>
+        <p class="dark:text-primary-500">
           Helping teams adopt modern, effective tools.
         </p>
       </div>
 
-      <a class="border-2 border-orange px-6 py-2" href="javascript:void(0)">
+      <a class="border-2 border-orange px-6 py-2" href="#">
         Get Started
       </a>
     </div>
   </section>
+
+
 </main>
 
 <!-- -------------------------- Footer -->
 <footer
-  class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue"
+  class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 
+         lg:mx-8 2xl:mx-16 
+         2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue"
 >
+
   <div class="grid gap-8 md:grid-cols-2 *:space-y-4">
     <div>
       <h2 class="text-2xl font-bold">Synova</h2>
@@ -591,6 +583,6 @@
   </div>
 </footer>
 
-    <script src="app.js"></script>
-  </body>
+<script src="app.js"></script>
+</body>
 </html>

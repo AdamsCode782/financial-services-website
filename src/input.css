@@ -4,21 +4,29 @@
 
 @layer base {
   body {
-    @apply dark:text-white;
+    @apply dark:text-white overflow-x-hidden;
   }
 
   a {
-    @apply dark:text-white rounded;
+    @apply dark:text-white;
   }
 
-  /* FIXED — fully responsive images */
-    img {
-       @apply rounded h-auto;
-  }
+  /* Images are no longer globally rounded or max-w-full */
+  img {
+     @apply h-auto max-w-full;
 }
 
 @layer components {
   .component {
-    @apply flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue;
+    @apply flex flex-col gap-y-12 px-4 py-8
+           sm:py-20 sm:px-8
+           lg:px-12 lg:rounded-2xl lg:my-8 lg:mx-8 lg:border lg:border-blue
+           2xl:mx-16;
   }
+
+  .pricing-btn {
+    @apply w-full text-center sm:w-auto;
+  }
+}
+
 }
